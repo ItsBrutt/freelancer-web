@@ -21,8 +21,13 @@ body{
 span{
     font-size: 2rem;
 }
-ul.navegacion{
-    list-style: none;
-    padding: 0;
+nav ul.navegacion-principal{
     text-align: center;
+}
+ul.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+.nav-bg{
+        background-color: var(--secundario);
 }
