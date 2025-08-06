@@ -1,7 +1,7 @@
 :root {
     --blanco:#ffffff;
     --oscuro:#212121;
-    --primario:#ffc107
+    --primario:#ffc107;
     --secundario:#0097a7;
     --gris:#757575;
 
@@ -11,11 +11,12 @@ html{
 }
 body{
     font-size: 16px; /* 1rem = 10px */
+    font-family: krub, sans-serif;
 }
 .titulo{
     text-align: center ;
     font-size: 3.8rem;
-    color: var(--primario);
+    color: var(--oscuro);
 }
 span{
     font-size: 2rem;
