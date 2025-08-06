@@ -21,13 +21,14 @@ body{
 span{
     font-size: 2rem;
 }
-nav ul.navegacion-principal{
-    text-align: center;
-}
-ul.contenedor{
-    width: 120rem;
-    margin: 0 auto;
-}
 .nav-bg{
         background-color: var(--secundario);
 }
+nav ul.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+
+
+
