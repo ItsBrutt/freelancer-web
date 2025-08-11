@@ -27,6 +27,7 @@ span{
 }
 .nav-bg{
         background-color: var(--secundario);
+        
 }
 .navegacion-principal{
     display: flex;
@@ -35,7 +36,6 @@ span{
     padding: 1rem 2rem;
 }
 .navegacion-principal a{
-    background-color: var(--primario);
     color: var(--blanco);
     text-decoration: none;
     font-size: 1.6rem;
