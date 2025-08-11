@@ -21,13 +21,26 @@ body{
 span{
     font-size: 2rem;
 }
-.nav-bg{
-        background-color: var(--secundario);
-}
-nav ul.contenedor{
+.contenedor{
     width: 120rem;
     margin: 0 auto;
 }
+.nav-bg{
+        background-color: var(--secundario);
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+.navegacion-principal a{
+    background-color: var(--primario);
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
 
 
 
