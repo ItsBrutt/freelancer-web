@@ -32,16 +32,20 @@ span{
 }
 .navegacion-principal{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
 }
 .navegacion-principal a{
     color: var(--blanco);
     text-decoration: none;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
 }
-
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
 
 
 
