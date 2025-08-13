@@ -9,6 +9,10 @@
 }
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 body{
     font-size: 16px; /* 1rem = 10px */
@@ -84,5 +88,9 @@ div.contenido-hero a{
     padding: 1rem 2rem; 
     border-radius: 0.3rem;
     transition: background-color 0.2s ease, color 0.2s ease;
+}
+div.contenido-hero a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
 
