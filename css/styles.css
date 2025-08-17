@@ -68,10 +68,28 @@ span{
     color: var(--oscuro);
 }
 
+}
+/*utilidades de Navegación */
+.w-100{
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-100{
+        width: auto;
+    }
+    
+}
+.alinear-derecha{
+    justify-content: flex-end;
+}
+.flex{
+    display: flex;
+}
 .nav-bg{
     background-color: var(--secundario);
         
 }
+/* Estilos de Navegación Principal */
 .navegacion-principal{
     display: flex;
     flex-direction: column;
@@ -96,6 +114,7 @@ span{
     border-radius: 0.3rem;
     transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .navegacion-principal a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
@@ -106,7 +125,6 @@ span{
     background-size: cover;
     background-position: center;
     margin-bottom: 2rem;
-   
 
 }
 div.contenido-hero{
@@ -132,6 +150,25 @@ div.contenido-hero a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
 }
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    border:none
+}
+.boton:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+    cursor: pointer;}
+
 .ubicacion{
     display: flex;
     align-items: center;
@@ -194,4 +231,33 @@ div.contenido-hero a:hover{
     text-transform: uppercase;
     font-weight: bold;
     color: var(--primario);
+}
+.contenedor-campos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.campo{
+    margin-bottom: 1.5rem;
+
+}
+.campo label{
+    display: block;
+    font-size: 1.6rem;
+    color: var(--blanco);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.input-text{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: none;
+    border-radius: 0.5rem;
+}
+.enviar .boton{
+    width: 100%;
+    border: none;
+    cursor: pointer;
 }
