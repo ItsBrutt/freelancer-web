@@ -11,6 +11,9 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; 
+    scroll-snap-type: y mandatory; /* Permite el scroll snap */
+    scroll-behavior: smooth; /* Suaviza el scroll */
+    overflow-x: hidden; /* Evita el scroll horizontal */
 }
 *, *:before, *:after {
   box-sizing: inherit; /*hack para box model*/
@@ -66,8 +69,6 @@ span{
 .contenedor h2{
     text-align: center;
     color: var(--oscuro);
-}
-
 }
 /*utilidades de Navegación */
 .w-100{
@@ -175,6 +176,10 @@ div.contenido-hero a:hover{
     justify-content: center;
     color: var(--blanco);
 }
+.servicios,.navegacion-principal,.formulario{
+    scroll-snap-align: center; /* Alinea el snap al centro */
+    scroll-snap-stop: always; /* Asegura que el snap se detenga en este punto */
+}
 /* Estilos de Servicios */
 @media (min-width: 768px) {
     .servicios{
@@ -214,6 +219,11 @@ div.contenido-hero a:hover{
 }
 /*contenedor de contacto */
 .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 120rem;
     background-color: var(--gris);
     width: min(60rem,100%);/** ancho minimo */
     margin: 0 auto;
@@ -232,11 +242,17 @@ div.contenido-hero a:hover{
     font-weight: bold;
     color: var(--primario);
 }
-.contenedor-campos{
+@media (min-width: 768px) {
+    .contenedor-campos{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 20rem;
+    column-gap: 1rem;
+    }
+    .campo:nth-child(3),
+    .campo:nth-child(4){
+        grid-column: 1 / 3;
+    }
 }
 .campo{
     margin-bottom: 1.5rem;
@@ -249,6 +265,9 @@ div.contenido-hero a:hover{
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
+.campo textarea{
+    height: 20rem;
+}
 .input-text{
     width: 100%;
     padding: 1rem;
@@ -260,4 +279,11 @@ div.contenido-hero a:hover{
     width: 100%;
     border: none;
     cursor: pointer;
+}
+.footer{
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
