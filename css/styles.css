@@ -175,3 +175,23 @@ div.contenido-hero a:hover{
     border-radius: 50%;
     margin: 0 auto;
 }
+/*contenedor de contacto */
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem,100%);/** ancho minimo */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border:none
+}
+.formulario legend{
+    font-size: 2.4rem;
+    color: var(--oscuro);
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primario);
+}
