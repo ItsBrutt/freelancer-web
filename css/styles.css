@@ -39,12 +39,16 @@ h2{
     color: var(--blanco);
     margin: 2rem 0;
 }
+h3{
+    font-size: 2.4rem;
+    color: var(--oscuro);
+    margin: 2rem 0;
+}
 p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--blanco);
-    margin: 1rem 0;
     line-height: 1.5;
-    font-weight: 300;
+    margin: 1rem 0;
 }
 /* Estilos de Navegación */
 .titulo{
@@ -58,6 +62,10 @@ span{
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
+}
+.contenedor h2{
+    text-align: center;
+    color: var(--oscuro);
 }
 
 .nav-bg{
@@ -129,4 +137,41 @@ div.contenido-hero a:hover{
     align-items: center;
     justify-content: center;
     color: var(--blanco);
+}
+/* Estilos de Servicios */
+@media (min-width: 768px) {
+    .servicios{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin: 2rem 0; 
+    }
+    
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    text-align: center;
+    color: var(--secundario);
+    font-weight: 400;
+}
+.servicio p{
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--gris);
+    line-height: 2rem;
+}
+.servicios .icono{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15rem;
+    height: 15rem;
+    color: var(--blanco);
+    background-color: var(--primario);
+    border-radius: 50%;
+    margin: 0 auto;
 }
