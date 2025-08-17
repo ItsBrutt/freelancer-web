@@ -5,8 +5,7 @@
     --secundario:#0097a7;
     --gris:#757575;
     --fondo:#4C4480;
-    --fondo-secundario:rgba(215, 190, 114, 00.2
-    );
+    --grisClaro:#DFE9F3;
 }
 /* Estilos Globales */
 html{
@@ -19,8 +18,9 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: krub, sans-serif;
-    line-height: 1.5;
-    background-color: var(--fondo-secundario);
+background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+
+
 } 
 /* Estilos Generales */
 h1{
@@ -51,9 +51,9 @@ span{
 }
 .contenedor{
     max-width: 120rem;
-    width: 90%;
     margin: 0 auto;
 }
+
 .nav-bg{
     background-color: var(--secundario);
         
