@@ -7,24 +7,40 @@
     --fondo:#4C4480;
     --fondo-secundario:rgba(215, 190, 114, 00.2
     );
-
-
 }
+/* Estilos Globales */
 html{
     font-size: 62.5%;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+  box-sizing: inherit; /*hack para box model*/
 }
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: krub, sans-serif;
     line-height: 1.5;
     background-color: var(--fondo-secundario);
-
-
 } 
+/* Estilos Generales */
+h1{
+    font-size: 4.8rem;
+    color: var(--oscuro);
+    margin: 2rem 0;
+}
+h2{
+    font-size: 3.2rem;
+    color: var(--blanco);
+    margin: 2rem 0;
+}
+p{
+    font-size: 2rem;
+    color: var(--blanco);
+    margin: 1rem 0;
+    line-height: 1.5;
+    font-weight: 300;
+}
+/* Estilos de Navegación */
 .titulo{
     text-align: center ;
     font-size: 3.8rem;
@@ -91,12 +107,18 @@ div.contenido-hero a{
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: bold;
-    padding: 1rem 2rem; 
-    border-radius: 0.3rem;
+    padding: 1rem 3rem; 
+    border-radius: 0.5rem;
     transition: background-color 0.2s ease, color 0.2s ease;
+    text-transform: uppercase;
 }
 div.contenido-hero a:hover{
     background-color: var(--primario);
     color: var(--oscuro);
 }
-
+.ubicacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
