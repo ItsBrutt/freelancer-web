@@ -4,6 +4,7 @@ Este es mi primer proyecto profesional publicado en GitHub. Una landing page res
 
 🚧 Actualmente en desarrollo (versión 1.0 – Frontend estático).
 
+
 ## 🛠️ Tecnologías utilizadas
 - HTML5
 - CSS3
