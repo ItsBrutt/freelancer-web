@@ -1,13 +1,8 @@
-# 💼 Personal Freelancer Website
+# 🧑‍💻 Mi sitio Freelancer
 
-Bienvenido al repositorio de mi primer proyecto de GitHub: un sitio web profesional para presentarme como **freelancer en desarrollo web**. Este sitio está construido inicialmente con **HTML5 y CSS3**, y representa el primer paso en mi camino profesional como desarrollador.
+Este es mi primer proyecto profesional publicado en GitHub. Una landing page responsive construida con HTML5 y CSS3. El objetivo es representar mi perfil freelancer de manera limpia, clara y escalable. Este proyecto crecerá con el tiempo e incluirá funcionalidades como formularios conectados a una base de datos, backend y funcionalidades reales de contacto.
 
-## 🚀 Propósito
-Este proyecto nace como parte de mi desarrollo profesional y personal, con el objetivo de:
-- Consolidar mi presencia online.
-- Presentar mis servicios como freelancer.
-- Practicar y mejorar mis habilidades en frontend.
-- Escalar progresivamente hacia una versión dinámica y conectada a backend.
+🚧 Actualmente en desarrollo (versión 1.0 – Frontend estático).
 
 ## 🛠️ Tecnologías utilizadas
 - HTML5
